@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Displasrios.Recaudacion.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CashRegisterController.IsCashOpenend">
+            <summary>
+            Retorna true cuando detecta que ya se ha aperturado caja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CashRegisterController.Open(System.Decimal)">
+            <summary>
+            Registra apertura de caja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CashRegisterController.Close(System.Decimal,System.String)">
+            <summary>
+            Registra cierre de caja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CashRegisterController.GetTotalsForCashClose">
+            <summary>
+            Retorna los totales de ingresos por vendedores, total de ventas local, egresos y gastos 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CatalogueController.GetCatalogs">
+            <summary>
+            Obtiene una lista de catálogos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CatalogueController.GetCatalogue(System.String)">
+            <summary>
+            Obtiene un catálogo por nombre
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CatalogueController.GetSellers">
+            <summary>
+            Obtiene el catálogo de vendedores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.GetCustomer(System.String)">
+            <summary>
+            Obtiene un cliente por identificación
+            </summary>
+            <param name="identification"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.GetDebts(System.String,System.String)">
+            <summary>
+            Obtiene deudas del cliente por identificación
+            </summary>
+            <param name="identification"></param>
+            <param name="names"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.GetCustomerByNames(System.String)">
+            <summary>
+            Obtiene un cliente por identificación
+            </summary>
+            <param name="names"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.GetCustomer(System.Int32)">
+            <summary>
+            Obtiene un cliente por id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.GetCustomers">
+            <summary>
+            Obtener una lista de clientes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.Update(Displasrios.Recaudacion.Core.Models.CustomerUpdate)">
+            <summary>
+            Actualiza la información de un cliente
+            </summary>
+            <param name="customer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.CustomerController.Create(Displasrios.Recaudacion.Core.Models.CustomerCreate)">
+            <summary>
+            Registra un nuevo cliente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.GetProducts">
+            <summary>
+            Obtener una lista de productos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.GetProduct(System.Int32)">
+            <summary>
+            Obtener una lista de productos
+            <param name="id"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.GetProducts(System.String)">
+            <summary>
+            Obtener una lista de productos
+            <param name="name"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.GetBySale(System.Int32)">
+            <summary>
+            Obtener una lista de productos
+            <param name="id"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.Create(Displasrios.Recaudacion.Core.DTOs.ProductCreation)">
+            <summary>
+            Crea un nuevo producto
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.Remove(System.Int32)">
+            <summary>
+            Elimina un producto por id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.GetCurrentStock(System.Int32)">
+            <summary>
+            Obtiene el stock actual de un producto según su id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.IncreaseStock(Displasrios.Recaudacion.Core.Models.Sales.UpdateStock)">
+            <summary>
+            Aumenta el stock de un producto por id
+            </summary>
+            <param name="updateStock"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProductController.DecreaseStock(Displasrios.Recaudacion.Core.Models.Sales.UpdateStock)">
+            <summary>
+            Disminuye el stock de un producto por id
+            </summary>
+            <param name="updateStock"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProviderController.GetProviders">
+            <summary>
+            Obtiene una lista de proveedores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProviderController.GetAsCatalogue">
+            <summary>
+            Obtiene una lista de proveedores en formato de catálogo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProviderController.Create(Displasrios.Recaudacion.Core.Models.ProviderCreate)">
+            <summary>
+            Crea un nuevo proveedor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ProviderController.Remove(System.Int32)">
+            <summary>
+            Elimina un proveedor por id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.PurchaseController.Create(Displasrios.Recaudacion.Core.Models.PurchaseCreate)">
+            <summary>
+            Registra una nueva compra
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ReportController.GetIncomePerSellers(Displasrios.Recaudacion.Core.Models.Sales.IncomeBySellers)">
+            <summary>
+            Obtiene los ingresos por vendedor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ReportController.GetTotalSalesToday">
+            <summary>
+            Obtiene total de ingresos diarios en el día de vendedor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ReportController.GetSellerPersonalReport">
+            <summary>
+            Obtiene resumen (totales) para presentación en pantalla de mi reporte del vendedor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ReportController.GetBestCustomers">
+            <summary>
+            Obtiene los 7 mejores clientes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.ReportController.GetMostSelledProducts">
+            <summary>
+            Obtiene los 10 productos más vendidos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.SaleController.Create(Displasrios.Recaudacion.Core.DTOs.FullOrderDto)">
+            <summary>
+            Registra un nuevo pedido
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.SaleController.SaveCollectorSales(Displasrios.Recaudacion.Core.Models.Sales.SalesSellerToday)">
+            <summary>
+            Registra las ventas del día del vendedor previo al cierre de caja del administrador de ventas
+            </summary>
+            <param name="salesSellerToday"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.SaleController.SendReceipt(System.Int32)">
+            <summary>
+            Envía al cliente el recibo de compra por correo electrónico
+            </summary>
+            <param name="orderNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.GetUser(System.Int32)">
+            <summary>
+            Obtiene un usuario por id.
+            </summary>
+            <param name="id">Example id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.GetProfile">
+            <summary>
+            Obtiene el perfil de un usuario.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.GetProfiles">
+            <summary>
+            Obtiene el catálogo de perfiles de usuario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.GetUsers">
+            <summary>
+            Obtener una lista de usuarios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.GetCollectors">
+            <summary>
+            Obtener una lista de todos los recaudadores que aún no han entregado sus ingresos del día para el arqueo de caja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.Create(Displasrios.Recaudacion.Core.Models.UserCreation)">
+            <summary>
+            Crea un nuevo usuario
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Displasrios.Recaudacion.WebApi.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Elimina un usuario por id
+            </summary>
+            <param name="idUser"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
